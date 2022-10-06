@@ -1,23 +1,32 @@
 .statistics {
-
+  width: 400px;
+  margin-top: 20px;
+  background-color: #eee;
 }
 
 .title {
-
+  padding: 20px;
+  text-align: center;
 }
 
 .statList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 
+  list-style: none;
 }
 
 .item {
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: 33.3333%;
 }
 
-.label {
-
-}
-
-.percentage {
-
+.label, .percentage {
+  display: block;
+  text-align: center;
 }

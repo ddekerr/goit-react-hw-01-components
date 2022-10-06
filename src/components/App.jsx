@@ -9,9 +9,10 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
-        flexDirection: 'column',
+        flexWrap: 'wrap',
         justifyContent: 'center',
         alignItems: 'center',
+        gap: '10px',
         fontSize: 18,
         color: '#010101',
       }}
@@ -23,7 +24,7 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={stats} />
+      <Statistics title="Upload stats" stats={stats}  />
     </div>
   );
 };
