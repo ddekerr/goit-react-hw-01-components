@@ -1,6 +1,6 @@
 .profile {
-  width: 400px;
-  padding-top: 50px;
+  width: 200px;
+  padding-top: 20px;
   border: 1px solid #bbb;
   border-radius: 10px;
   box-shadow: 0 0 5px 0 #999;
@@ -8,7 +8,7 @@
 
 .description {
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .avatar {
@@ -28,7 +28,7 @@
 .name {
   margin-bottom: 10px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 21px;
 }
 
 .tag,
@@ -36,6 +36,7 @@
   margin-bottom: 10px;
   text-align: center;
   color: #999;
+  font-size: 16px;
 }
 
 .stats {
@@ -50,7 +51,7 @@
 .stats li {
   flex-basis: 33.3333%;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .stats li:not(:last-child) {
@@ -60,7 +61,7 @@
 .quantity,
 .label {
   display: block;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .label {
