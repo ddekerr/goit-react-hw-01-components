@@ -1,5 +1,11 @@
 import propTypes from 'prop-types';
-import { Transaction, TransactionHeader, TransactionHeaderCell, TransactionRow, TransactionCell } from './TransactionHistory.styled';
+import {
+  Transaction,
+  TransactionHeader,
+  TransactionHeaderCell,
+  TransactionRow,
+  TransactionCell,
+} from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
@@ -26,10 +32,12 @@ export const TransactionHistory = ({ transactions }) => {
 };
 
 TransactionHistory.propTypes = {
-  transactions: propTypes.exact({
-    id: propTypes.string.isRequired,
-    type: propTypes.string.isRequired,
-    amount: propTypes.string.isRequired,
-    currency: propTypes.string.isRequired,
-  })
-}
+  transactions: propTypes.arrayOf(
+    propTypes.exact({
+      id: propTypes.string.isRequired,
+      type: propTypes.string.isRequired,
+      amount: propTypes.string.isRequired,
+      currency: propTypes.string.isRequired,
+    })
+  ),
+};

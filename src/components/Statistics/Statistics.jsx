@@ -16,7 +16,10 @@ export const Statistics = ({ title, stats }) => {
 
       <StatisticList>
         {stats.map(({ label, percentage, id }) => (
-          <StatisticItem key={id} style={{ backgroundColor: getRandomHexColor() }}>
+          <StatisticItem
+            key={id}
+            style={{ backgroundColor: getRandomHexColor() }}
+          >
             <StatisticLabel>{label}</StatisticLabel>
             <StatisticPercent>{percentage}%</StatisticPercent>
           </StatisticItem>
@@ -28,9 +31,11 @@ export const Statistics = ({ title, stats }) => {
 
 Statistics.propTypes = {
   title: propTypes.string,
-  stats: propTypes.exact({
-    id: propTypes.string.isRequired,
-    label: propTypes.string.isRequired,
-    percentage: propTypes.number.isRequired,
-  }),
+  stats: propTypes.arrayOf(
+    propTypes.exact({
+      id: propTypes.string.isRequired,
+      label: propTypes.string.isRequired,
+      percentage: propTypes.number.isRequired,
+    })
+  ),
 };
