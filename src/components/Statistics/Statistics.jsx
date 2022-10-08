@@ -1,20 +1,27 @@
-import css from './Statistics.module.css';
 import propTypes from 'prop-types';
+import {
+  Statistic,
+  StatisticTitle,
+  StatisticList,
+  StatisticItem,
+  StatisticLabel,
+  StatisticPercent,
+} from './Statistics.styled';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
+    <Statistic>
+      {title && <StatisticTitle>{title}</StatisticTitle>}
 
-      <ul className={css.statList}>
-        {stats.map(({label, percentage}) => (
-          <li className={css.item} style={{ backgroundColor: getRandomHexColor() }}>
-            <span className={css.label}>{label}</span>
-            <span className={css.percentage}>{percentage}%</span>
-          </li>
+      <StatisticList>
+        {stats.map(({ label, percentage }) => (
+          <StatisticItem style={{ backgroundColor: getRandomHexColor() }}>
+            <StatisticLabel>{label}</StatisticLabel>
+            <StatisticPercent>{percentage}%</StatisticPercent>
+          </StatisticItem>
         ))}
-      </ul>
-    </section>
+      </StatisticList>
+    </Statistic>
   );
 };
 
