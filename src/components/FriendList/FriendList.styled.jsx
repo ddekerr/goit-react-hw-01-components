@@ -21,6 +21,7 @@ export const FriendStatus = styled.span`
   width:20px;
   height:20px;
   border-radius:50%;
+  background-color: ${p => p.online ? 'green' : 'red'};
 `;
 
 export const FriendAvatar = styled.img`

@@ -7,10 +7,9 @@ import {
 } from './FriendList.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
-  const bgColor = isOnline ? 'rgb(255, 0, 0)' : 'rgb(0, 255, 0)';
   return (
     <Friend>
-      <FriendStatus style={{backgroundColor: bgColor}}></FriendStatus>
+      <FriendStatus online={isOnline}></FriendStatus>
       <FriendAvatar src={avatar} alt={name} width="48" />
       <FriendName>{name}</FriendName>
     </Friend>

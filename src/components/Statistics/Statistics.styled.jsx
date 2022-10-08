@@ -26,6 +26,7 @@ export const StatisticItem = styled.li`
   padding-top: 10px;
   padding-bottom: 10px;
   min-width: 33.3333%;
+  background-color: ${p => p.bg};
 `;
 
 export const StatisticLabel = styled.span`
