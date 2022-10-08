@@ -7,6 +7,7 @@ import {
   StatisticLabel,
   StatisticPercent,
 } from './Statistics.styled';
+import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {
   return (
@@ -33,9 +34,3 @@ Statistics.propTypes = {
     percentage: propTypes.number.isRequired,
   }),
 };
-
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
