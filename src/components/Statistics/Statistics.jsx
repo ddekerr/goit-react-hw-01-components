@@ -7,7 +7,7 @@ import {
   StatisticLabel,
   StatisticPercent,
 } from './Statistics.styled';
-import { getRandomHexColor } from 'utils/getRandomHexColor';
+import { getRandomHexColor } from 'utils';
 
 export const Statistics = ({ title, stats }) => {
   return (
