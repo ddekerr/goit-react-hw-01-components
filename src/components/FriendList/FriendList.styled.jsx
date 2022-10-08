@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 export const FriendListContainer = styled.ul`
   margin:0;
   padding:0;
-  list-stile:none;
+  list-style:none;
 `;
 
 export const Friend = styled.li`

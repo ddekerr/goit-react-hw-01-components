@@ -19,7 +19,7 @@ export const TransactionHeaderCell = styled.th`
 `;
 
 export const TransactionRow = styled.tr`
-  &:nth-child(2n) {
+  &:nth-of-type(2n) {
     background-color: #eee;
   }
 `;
