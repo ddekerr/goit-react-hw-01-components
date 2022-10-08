@@ -1,12 +1,12 @@
 import user from 'user.json';
 import stats from 'data.json';
-// import friends from 'friends.json';
+import friends from 'friends.json';
 
 import { Container } from './App.styled';
 
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
-// import { FriendList } from 'components/FriendList/FriendList';
+import { FriendList } from 'components/FriendList/FriendList';
 
 export const App = () => {
   return (
@@ -19,11 +19,7 @@ export const App = () => {
         stats={user.stats}
       />
       <Statistics title="Upload stats" stats={stats} />
-      {/* <FriendList
-        avatar={friends.avatar}
-        name={friends.name}
-        isOnline={friends.isOnline}
-      /> */}
+      <FriendList friends={friends} />
     </Container>
   );
 };
