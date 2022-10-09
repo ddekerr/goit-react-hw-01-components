@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   ProfileCard,
   ProfileDescription,
@@ -41,9 +41,9 @@ export const Profile = ({ avatar, username, tag, location, stats }) => {
 };
 
 Profile.propTypes = {
-  avatar: propTypes.string,
-  username: propTypes.string.isRequired,
-  tag: propTypes.string,
-  location: propTypes.string,
-  stats: propTypes.objectOf(propTypes.number),
+  avatar: PropTypes.string,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
 };

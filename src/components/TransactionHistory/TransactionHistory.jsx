@@ -1,4 +1,4 @@
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import {
   Transaction,
   TransactionHeader,
@@ -32,12 +32,12 @@ export const TransactionHistory = ({ transactions }) => {
 };
 
 TransactionHistory.propTypes = {
-  transactions: propTypes.arrayOf(
-    propTypes.exact({
-      id: propTypes.string.isRequired,
-      type: propTypes.string.isRequired,
-      amount: propTypes.string.isRequired,
-      currency: propTypes.string.isRequired,
+  transactions: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      amount:PropTypes.string.isRequired,
+      currency: PropTypes.string.isRequired,
     })
   ),
 };
